@@ -15,6 +15,7 @@ export default function App() {
           <Route path="chapter/:topicId/:chapterId" element={<ChapterDetailPage />} />
         </Route>
         {/* This route ensures it works on small screens */}
+
         <Route path="chapter/:topicId/:chapterId" element={<ChapterDetailPage />} />
       </Routes>
     </Router>
