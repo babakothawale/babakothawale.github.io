@@ -8,8 +8,11 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    // "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true, // Add this line
+    "esModuleInterop": true,    
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
