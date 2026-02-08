@@ -1,0 +1,46 @@
+/* Ensure the root spans the full height and width */
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flex container for the layout */
+.flex {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Left and right pane widths for large screens */
+.left-pane {
+  width: 33.33%; /* 1/3 of the screen */
+  overflow-y: auto;
+  /* background-color: #f9f9f9; */
+   /* Light background for left pane */
+  padding: 1rem;
+}
+
+.right-pane {
+  width: 66.67%; /* 2/3 of the screen */
+  overflow-y: auto;
+  /* background-color: #ffffff; */
+   /* Light background for right pane */
+  padding: 1rem;
+}
+
+/* Responsive behavior for small screens */
+@media (max-width: 1023px) {
+  .left-pane,
+  .right-pane {
+    width: 100%;
+  }
+
+  .left-pane {
+    display: block;
+  }
+
+  .right-pane {
+    display: none; /* Hide right pane on small screens */
+  }
+}
